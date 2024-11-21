@@ -1,16 +1,20 @@
 header {
-    nav {
+        display: flex;
+        justify-content: space-between;
+    figure {
         
         img {
 
         }
+    }
+    .menu {
+        display: flex;
+        justify-content: start;
 
-        menu {
-            li {
-                a {
-                    &:hover{
-                        
-                    }
+        li {
+            a {
+                &:hover{
+                    
                 }
             }
         }

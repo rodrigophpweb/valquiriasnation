@@ -1,0 +1,121 @@
+main {
+    display: flex;
+    flex-direction: column;
+
+    .about {
+        h2 {}
+        .numbers {
+            .number {
+                h3 {}
+                span {}
+            }
+        }
+    }
+
+    .history {
+        h2 {}
+        .subtitle {}
+        article {
+            figure {
+                img {}
+            
+                figcaption {
+                    svg {}
+                    .texts {
+                        .titleFounder {}
+                        .nameFounder {}
+                    }
+                }
+            }
+
+            .contentTitle {
+                h3 {}
+            }
+
+            nav {
+                ul {
+                    li {
+                        a {}
+                    }
+                }
+            }
+
+            .boxContent {
+
+            }
+        }
+    }
+
+    .recognitions {
+        h2 {}
+        .subtitle {}
+        video {}
+    }
+
+    .awards {
+        display: flex;
+        flex-wrap: wrap;
+        
+        h2 {
+            width: 100%;
+        }
+
+        .years {
+            display: flex;
+            h3 {}
+            .awardsName {}
+        }
+    }
+
+
+   .youHistory {
+        display: flex;
+        flex-wrap: wrap;
+        article {
+            h2 {}
+            h3 {}
+            p {}
+        }
+
+        figure {
+            img {}
+        }
+        .insights {
+            width: 100%;
+        }
+   }
+   
+   .nationValquirias {
+        figure {
+            img {}
+        }
+        article {
+            h2 {}
+            h3 {}
+            p {}
+        }
+   }
+
+   .counselors {
+        h2 {}
+        .subtitle {}
+        p {}
+   }
+
+   .paulistaCouncil,
+   .nationalCouncil {
+        h2 {}
+        figure {
+            img {}
+        }
+        .bullets {}
+   }
+
+   .internacionalCouncil {
+        h2 {}
+        figure {
+            img {}
+        }
+   }
+
+}
