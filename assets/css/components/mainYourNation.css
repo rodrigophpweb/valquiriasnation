@@ -1,0 +1,55 @@
+main {
+    .advocacy {
+        h2 {}
+        article {
+            .item {
+                .itemNumber {}
+            }
+            .content {
+                h3 {}
+                p {}
+            }
+        }
+    }
+
+    .banners {}
+
+    .spheresOfActivity {
+        h2 {}
+        article {
+            .item {
+                .itemNumber{}
+            }
+            .content {
+                h3 {}
+                p {}
+            }
+        }
+    }
+
+    .transparency {
+        article {
+            header {}
+            .lists {}
+            footer {
+                .buttons {
+                    a {}
+                }
+            }
+        }
+
+    }
+
+   .financialStatement {
+        h2 {}
+        p {}
+        .pdfs {
+            .pdf {
+                .year {}
+            }
+        }
+   }
+
+   @import url('socialExperience.css');
+   @import url('modalSocialExperience');
+}

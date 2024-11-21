@@ -1,0 +1,6 @@
+main {
+    h1 {}
+   .squareContent {}
+   @import url('socialExperience.css');
+   @import url('modalSocialExperience');
+}
