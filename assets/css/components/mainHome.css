@@ -197,13 +197,31 @@ main {
    }
    
    .nationValquirias {
+        display: flex;
+        
         figure {
-            img {}
+            width: 50%;
+            img {
+                width: 100%;
+            }
         }
         article {
+            width: 50%;
+            margin-left: 5rem;
             h2 {}
-            h3 {}
-            p {}
+            h3 {
+                font-size: 3.3rem;
+                font-weight: 500;
+                line-height: 4.3rem;
+                width: 49rem;
+                margin-bottom: 1.9rem;
+            }
+            p {
+                font-size: 1.43rem;
+                font-weight: 400;
+                margin-bottom: 1rem;
+                width: 54rem;
+            }
         }
    }
 
