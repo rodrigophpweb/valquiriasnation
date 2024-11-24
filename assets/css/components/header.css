@@ -2,6 +2,7 @@ header {
     height: 103.2rem; 
     background-image: url('../../images/webp/converted/hero-banner-home.webp');
     background-repeat: no-repeat;
+    background-size: 100%;
     text-align: center;
         nav {
             width: 100%;
