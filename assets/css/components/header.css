@@ -1,20 +1,32 @@
-header {
-        display: flex;
-        justify-content: space-between;
-    figure {
-        
-        img {
+header {       
+    height: 103.2rem; 
+    background-image: url('../../images/webp/converted/hero-banner-home.webp');
+    background-repeat: no-repeat;
+    text-align: center;
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
 
-        }
-    }
-    .menu {
-        display: flex;
-        justify-content: start;
+        .menu {
+            display: flex;
+            margin: 0 8rem;
+            justify-content: space-evenly;
+                                    
+    
+            li {
+                display: flex;
+                flex-direction: column;
+                justify-content:center;
+                margin: 0 4rem;
+                
+                a {
+                    text-transform: uppercase;
+                    color: var(--white);
 
-        li {
-            a {
-                &:hover{
-                    
+                    &:hover{
+                        color: var(--yellow);
+                    }
                 }
             }
         }

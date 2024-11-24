@@ -3,8 +3,18 @@ main {
     flex-direction: column;
 
     .about {
-        h2 {}
+            margin-top: 5rem;
+
+        h1 {
+            text-align: center;
+        }
+
         .numbers {
+            display: flex;
+            width: 145rem;
+            margin: 0 auto;
+            background-color: rebeccapurple;
+
             .number {
                 h3 {}
                 span {}
