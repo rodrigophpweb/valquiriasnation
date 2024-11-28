@@ -7,36 +7,24 @@
     <link rel="stylesheet" href="assets/css/pages/frontPage.css">
 </head>
 <body>
-    <header class="paddingContent">
-        <svg width="1448" height="19" viewBox="0 0 1448 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_2558_2557)">
-            <path d="M1248.85 18.8752L1447.95 18.8752V3.62396e-05L1248.85 3.62396e-05V18.8752Z" fill="#754B99"/>
-            <path d="M1040.73 18.8752L1239.82 18.8752V3.62396e-05L1040.73 3.62396e-05V18.8752Z" fill="#323790"/>
-            <path d="M832.603 18.8752L1031.7 18.8752V3.62396e-05L832.603 3.62396e-05V18.8752Z" fill="#6EC0E8"/>
-            <path d="M624.478 18.8752L823.574 18.8752V3.62396e-05L624.478 3.62396e-05V18.8752Z" fill="#76B552"/>
-            <path d="M416.3 18.8752L615.396 18.8752V3.62396e-05L416.3 3.62396e-05V18.8752Z" fill="#F1C631"/>
-            <path d="M208.177 18.8752L407.273 18.8752V3.62396e-05L208.177 3.62396e-05V18.8752Z" fill="#DB7F2D"/>
-            <path d="M0.00163269 18.8752L199.098 18.8752V3.62396e-05L0.00163269 3.62396e-05V18.8752Z" fill="#CC2229"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_2558_2557">
-            <rect width="1448" height="18.8752" fill="white"/>
-            </clipPath>
-            </defs>
-        </svg>            
-       <nav>
-            <figure>
-                <img src="assets/images/svg/logotipo-negativo-nacao-valquirias.svg" alt="Logotipo Nação Valquirias">
-            </figure> 
-            <ul class="menu">
-                <li><a href="">Nossa Nação</a></li>
-                <li><a href="">Comitês</a></li>
-                <li><a href="">Programa Sociais ODS</a></li>
-                <li><a href="">Castelo</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">DOE</a></li>
-            </ul>
-       </nav>
+    <header>
+        <img src="assets/images/webp/converted/hero-banner-home.webp" alt="">
+        <div class="container">
+            <img src="assets/images/svg/linescolorfull.svg" alt="">     
+           <nav>
+                <figure class="brand">
+                    <img src="assets/images/svg/logotipo-negativo-nacao-valquirias.svg" alt="Logotipo Nação Valquirias">
+                </figure> 
+                <ul class="menu">
+                    <li><a href="">Nossa Nação</a></li>
+                    <li><a href="">Comitês</a></li>
+                    <li><a href="">Programa Sociais ODS</a></li>
+                    <li><a href="">Castelo</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">DOE</a></li>
+                </ul>
+           </nav>
+        </div>
     </header>
 
     <main>
@@ -70,9 +58,9 @@
             <span class="subtitle">Conheça a história de seupeção da nossa fundadora</span>
             <article>
                 <figure>
-                    <img src="" alt="">
+                    <img width="476" height="566" src="assets/images/webp/converted/fundadora-amanda-olivieira.webp" alt="Amanda Oliviera">
                     <figcaption>
-                        <svg></svg>
+                        <img width="32" height="32" src="assets/images/svg/coroa.svg" alt="Coroa Valquiírias">
                         <div class="texts">
                             <span class="titleFounder">Fundadora do Instituto</span>
                             <span class="nameFounder">Amanda Olivieira</span>
@@ -80,21 +68,31 @@
                     </figcaption>
                 </figure>
 
-                <div class="contentTitle">
-                    <h3>História de Superação</h3>
-                </div>
-
-                <nav>
-                    <ul>
-                        <li><a href="">História</a></li>
-                        <li><a href="">Jornada</a></li>
-                        <li><a href="">Conquista</a></li>
-                    </ul>
-                </nav>
-
-                <div class="boxContent">
-                    <p>Amanda Oliveira nasceu em um barraco de favela, viu sua vida mudar ao ingressar nas aulas de música de um projeto social ministrado por uma professora  chamada Valquíria Plaza. Cresceu, curou seus traumas sociais, superou a pobreza, se tornou mulher, musicista, empreendedora social e resolveu multiplicar o impacto.  Fundou o Instituto Nação Valquírias que se dedica a criar soluções inteligentes para o fim da pobreza monetária e emocional de meninas e mulheres em todo o país e Moçambique.</p>
-                    <a href="">Conheça a História do Instituo</a>
+                <div class="componentText">
+                    <header class="contentTitle">
+                        <h3 id="contentDinamic">História de Superação</h3>
+                    </header>
+    
+                    <nav class="tabs">
+                        <ul>
+                            <li class="tab-item active"><a href="#historia"  data-target="historia">História</a></li>
+                            <li class="tab-item"><a href="#jornada"  data-target="jornada">Jornada</a></li>
+                            <li class="tab-item"><a href="#conquista"  data-target="conquista">Conquista</a></li>
+                        </ul>
+                    </nav>
+    
+                    <footer class="boxContent">
+                        <div id="historia" class="boxhistory activeBox">
+                            <p>Amanda Oliveira nasceu em um barraco de favela, viu sua vida mudar ao ingressar nas aulas de música de um projeto social ministrado por uma professora  chamada Valquíria Plaza. Cresceu, curou seus traumas sociais, superou a pobreza, se tornou mulher, musicista, empreendedora social e resolveu multiplicar o impacto.  Fundou o Instituto Nação Valquírias que se dedica a criar soluções inteligentes para o fim da pobreza monetária e emocional de meninas e mulheres em todo o país e Moçambique.</p>
+                            <a href="">Conheça a História do Instituo</a>
+                        </div>
+                        <div id="jornada" class="boxjourney">
+                            <p>É fluente em empreendedorismo social e ao longo de sua jornada de ascensão,  criou também o observatório da pobreza feminina que cria jogos e  sistematiza jornadas reais de ascensão social coletiva e individual para que meninas e mulheres, curem os seus traumas e se lembrem de erguerem a cabeça para a sua coroa não cair.  Porque vencer a pobreza não é só sobre ser dona do seu  dinheiro é também  sobre ser dona do seu destino.</p>
+                        </div>
+                        <div id="conquista" class="boxconquest">
+                            <p>Amanda Oliveira possui duplo título na Forbes. Foi Forbes Under 30 aos 28 anos e aos 35 saiu na lista das 15 Mulheres de Sucesso que mais brilham em nosso país. Tem Carolina Herrera como Embaixadora Social da sua organização social, venceu o Prêmio Avon , foi campeã cinco vezes do Prêmio Lide, recebeu do poder legislativo a medalha de honra ao mérito comunitário e soma um total de trinta e duas premiações. Amanda diz que seu maior patrimônio é a sua história e atribui todas as suas conquistas ao grande arquiteto do universo: o cara lá de cima. E faz um chamado às empresas: Entre ganhar dinheiro e mudar o mundo, fique com os dois.</p>
+                        </div>
+                    </footer>
                 </div>
             </article>
         </section>
@@ -102,11 +100,12 @@
         <section class="recognitions paddingContent">
             <h2>Reconhecimentos</h2>
             <span class="subtitle">Texto introdutório do conteúdo abaixo Texto introdutório do conteúdo abaixo Texto introdutório do conteúdo abaixo Texto introdutório do conteúdo abaixo </span>
-            <video width="100%" height="496">
+            <!-- <video width="100%" height="496">
                 <source src="movie.mp4" type="video/mp4">
                 <source src="movie.ogg" type="video/ogg">
               Your browser does not support the video tag.
-            </video>
+            </video> -->
+            <img src="assets/images/webp/converted/conver-video-home.webp" alt="">
         </section>
 
         <section class="awards paddingContent">
@@ -214,7 +213,7 @@
 
         <section class="nationValquirias paddingContent">
             <figure>
-                <img src="assets/images/webp/converted/criancas-segurando-coroa.webp" alt="Crianças segurando cora">
+                <img src="assets/images/webp/converted/valquira-morena-com-camiseta-somos-luz.webp" alt="Mulher morena com camiseta escrito somos luz">
             </figure>
             <article>
                 <h3>Nação Valquírias tem a coroa como símbolo de seu trabalho</h3>
@@ -224,8 +223,8 @@
         </section>
 
         <section class="counselors paddingContent">
-            <h2>CONSELHEIRAS NAÇÃO VALQUÍRIAS</h2>
-            <span class="subtitle">SOZINHAS VAMOS RÁPIDAS, MAS, JUNTAS VAMOS LONGE.</span>
+            <h2>Conselheiras nação valquírias</h2>
+            <span class="subtitle">Sozinhas vamos rápido, mas, juntas vamos longe</span>
             <p>Criamos os nossos conselhos com mulheres empresárias que foram nomeadas como Conselheira de Impacto Social. Nos encontramos mensalmente afim de prestação de contas e construção do futuro da Nação. São elas que estão conosco na Jornada da Transformação Social das nossas meninas e mulheres. Conheça abaixo cada uma delas.</p>
         </section>
 
@@ -260,7 +259,7 @@
         <section class="internacionalCouncil paddingContent">
             <h2>CONSELHO INTERNACIONAL</h2>
             <figure>
-                <img src="" alt="" class="woman">
+                <img width="300" src="assets/images/webp/converted/renata-aron.webp" alt="Renata Aron" title="Renata Aron" class="woman">
             </figure>
         </section>
     </main>
@@ -289,5 +288,45 @@
             <small>Endereço: Rua Paschoal Decrescenzo, 599 - Jardim Itapema - CEP 15045-333 São José do Rio Preto/SP</small>
         </address>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const tabs = document.querySelectorAll('.tab-item');
+            const contentBoxes = document.querySelectorAll('.boxContent > div');
+            const contentTitle = document.getElementById('contentDinamic');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log("Tab clicada:", this);
+
+                    // Remove a classe 'active' de todos os itens de navegação
+                    tabs.forEach(tab => tab.classList.remove('active'));
+
+                    // Adiciona a classe 'active' no item de navegação clicado
+                    this.classList.add('active');
+
+                    // Esconde todos os conteúdos
+                    contentBoxes.forEach(box => box.classList.remove('activeBox'));
+
+                    // Exibe o conteúdo correspondente
+                    const target = this.querySelector('a').getAttribute('data-target');
+                    console.log("Target do conteúdo:", target);
+
+                    // Exibe o conteúdo correto
+                    document.getElementById(target).classList.add('activeBox');
+
+                    // Atualiza o título de conteúdo
+                    if (target === 'historia') {
+                        contentTitle.textContent = 'História de superação';
+                    } else if (target === 'jornada') {
+                        contentTitle.textContent = 'Jornada';
+                    } else if (target === 'conquista') {
+                        contentTitle.textContent = 'Conquistas';
+                    }
+                });
+            });
+        });
+
+    </script>
 </body>
 </html>
