@@ -55,7 +55,68 @@ main {
         }
     }
 
-    .banners {}
+    .bannersMVV {
+        display: flex;
+        flex-direction: column;
+
+        figure {
+            background-color: var(--frenchRose);
+            display: flex;
+            flex-direction: row;
+            border-radius: 1rem;
+            width: 100%;
+            height: 60.5rem;
+            
+            
+            img {
+                max-width: 71.3rem;
+            }
+            figcaption {    
+                padding: 15.5rem;   
+                display: block;
+                width: 50%; 
+
+                .subtitle {
+                    text-transform: uppercase;
+                    font-size: 1.6rem;
+                    line-height: 3.2;
+                    margin-bottom: .5rem;
+                    color: var(--white);
+                }
+                h3 {
+                    font-size: 4.8rem;
+                    line-height: 5.7rem;
+                    width: 18rem;
+                    color: var(--eminence);
+                    margin-bottom: 3rem;
+                    
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: auto;
+                        height: .2rem; 
+                        background-color: var(--white);
+                        margin-top: 1rem;
+                    }
+                }
+                .content {
+                    color: var(--white); 
+                    display: block;
+                    width: 35rem;
+
+                    h4 {
+                        font-size: 4rem;
+                        font-weight: 500;
+                    }
+                    p {                        
+                        font-size: 2rem;
+                        line-height: 3.2rem;                                                
+                    }
+                }
+            }
+        }
+    }
+    
 
     .spheresOfActivity {
         display: flex;
