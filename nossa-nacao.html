@@ -104,7 +104,7 @@
                 </figcaption>
             </figure>
 
-            <figure class="mission">
+            <figure class="mission" style="display: none;">
                 <img src="assets/images/webp/converted/banner-vision.webp" alt="">
                 <figcaption>
                     <span class="subtitle">Conheça</span>
@@ -114,10 +114,9 @@
                         <p>Despertar, educar e coroar um milhão de meninas e mulheres até 2030, abrindo caminhos para a manifestação do Castelo da Ascensão Social.</p>
                     </div>
                 </figcaption>
-            </figure>
-            
+            </figure>            
 
-            <figure class="mission">
+            <figure class="mission" style="display: none;">
                 <img src="assets/images/webp/converted/banner-values.webp" alt="">
                 <figcaption>
                     <span class="subtitle">Conheça</span>
@@ -173,21 +172,51 @@
             </article>
         </section>
 
-        <section class="transparency paddingContent">
+        <section class="transparency paddingContent">            
             <article>
                 <header>
-
+                    <h2>Transparência</h2>
+                    <p>Fortalecendo relações de confiança e reafirmando nossos pactos sociais.</p>
                 </header>
                 <div class="lists">
                     <ul>
+                        <li>
+                            <strong>Presidente</strong>
+                            <span>Ana Laura de Souza Reis</span>
+                        </li>
 
+                        <li>
+                            <strong>Vice-Presidente</strong>
+                            <span>Bianca da Silva Franco</span>
+                        </li>
+                        <li>
+                            <strong>Tesoureira</strong>
+                            <span>Michely Roberta dos Santos Maurity</span>
+                        </li>
+
+                        <li>
+                            <strong>Segunda Tesoureira</strong>
+                            <span>Nahuara Fidelis Pinheiro</span>
+                        </li>
                     </ul>
                     <ul>
+                        <li>
+                            <strong>Secretária</strong>
+                            <span>Bruna Criado Cassini</span>
+                        </li>
+                        <li>
+                            <strong>Fundadora e CEO</strong>
+                            <span>Amanda Priscila Oliveira da Silva</span>
+                        </li>
+                        <li>
+                            <strong>Conselheira Fiscal</strong>
+                            <span>Juliana Prado Ferrari Spolon</span>
+                        </li>
 
                     </ul>
                 </div>
                 <footer>
-                    <p></p>
+                    <p>O <span class="textColor">Estatuto Social reúne missão, visão e valores da nossa Organização bem como funcionam os nossos programas, regras e também o papel de cada membro da diretoria.</span> O estatuto também pode ser considerado como a certidão de nascimento de uma sociedade.</p>
                     <div class="buttons">
                         <a href="" target="_blank">Estatuo Social Baixar o PDF</a>
                         <a href="" target="_blank">Código de Conduta PDF</a>
@@ -195,7 +224,7 @@
                 </footer>
             </article>
             <figure>
-                <img src="" alt="">
+                <img width="639" src="assets/images/webp/converted/ana-cristina-j-guimares.png.webp" alt="Ana Cristina J. Guimaraes">
             </figure>
         </section>
 
@@ -230,23 +259,26 @@
         <section class="socialexperience paddingContent">
             <article>
                 <figure>
-                    <img src="" alt="">
+                    <img width="864" height="605" src="assets/images/webp/converted/criancas-com-coras-em-fila.webp" alt="">
                 </figure>
                 <div class="content">
                     <span class="subtite">PARTICIPE DA NOSSA</span>
                     <h2>Experiência Social</h2>
                     <p>Criar soluções inteligentes para o fim da pobreza emocional e monetária de meninas e mulheres</p>
-                    <a href="" title="Se inscreva aqui">Se inscreva aqui</a>
+                    <button id="btnModalSocial" title="Se inscreva aqui">Se inscreva aqui</button>
                 </div>
             </article>
         </section>
 
         <dialog class="modalSocialExperience paddingContent">
-            <header>
-                <figure>
-                    <img src="" alt="Logotipo Nação Valquírias">
-                </figure>
-                <h2>Experiência Social</h2>
+            <div class="content">
+                <img src="assets/images/svg/linescolorfull.svg" alt=""> 
+                <header>
+                    <figure>
+                        <img src="assets/images/svg/logotipo-nacao-valquirias.svg" alt="Logotipo Nação Valquírias" width="450" class="logotipo">
+                    </figure>
+                    <h2>Experiência Social</h2>                
+                </header>
                 <form action="">
                     <p>
                         <label for=""></label>
@@ -264,9 +296,9 @@
                         <label for=""></label>
                         <textarea name="" id="" placeholder="Mensagem"></textarea>
                     </p>
-                    <button>Enviar</button>
+                    <button type="submit" class="btnSend">Enviar</button>
                 </form>
-            </header>
+            </div>
         </dialog>
     </main>
 
@@ -294,5 +326,32 @@
             <small>Endereço: Rua Paschoal Decrescenzo, 599 - Jardim Itapema - CEP 15045-333 São José do Rio Preto/SP</small>
         </address>
     </footer>
+
+<script>
+    const btnModalSocial = document.getElementById("btnModalSocial");
+    const modal = document.querySelector(".modalSocialExperience");
+
+    // Abre o modal
+    btnModalSocial.addEventListener("click", () => {
+        modal.showModal();
+    });
+
+    // Fecha o modal ao clicar fora dele
+    modal.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            modal.closedModal()
+        }
+    });
+
+    // Fecha o modal ao pressionar a tecla ESC
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && modal.classList.contains("open")) {
+            modal.classList.remove("open");
+        }
+    });
+
+
+</script>
+
 </body>
 </html>

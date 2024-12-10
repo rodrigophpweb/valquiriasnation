@@ -1,8 +1,17 @@
-.socialexperience {
-    article {
-        .subtitle {}
-        h2 {}
-        p {}
-        a {}
+main {
+    .socialexperience {
+
+        article {
+            display: flex;
+            
+    
+            .subtitle {}
+        
+            h2 {}
+        
+            p {}
+        
+            a {}
+        }
     }
 }

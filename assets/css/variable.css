@@ -16,7 +16,7 @@
     --frenchRose: #FD4C8C;
     --palePink: #FFD7DA; 
     --orchid: #E280CC;
-    --bnbleachedSilk: #FFD6CD;
+    --bnbleachedSilk: #ffeee3;
     --eminence: #5F2E89;
     --royalPurple: #8155AE;
     --gainsboro: #e2d4dc;
@@ -25,6 +25,8 @@
     --dark: #000000;
     --white: #fff; 
     --yellow: #F1C631;
+    --boxSocialExperience: #ffcdf4;
+    --backdrop: #fffaee;
 }
 
 body {
