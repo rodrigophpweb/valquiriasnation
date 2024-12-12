@@ -14,6 +14,7 @@
 :root {
     font-size: 62.5%;
     --frenchRose: #FD4C8C;
+    --paradisePink: #EB4D5D;
     --palePink: #FFD7DA; 
     --orchid: #E280CC;
     --bnbleachedSilk: #ffeee3;
@@ -25,11 +26,15 @@
     --dark: #000000;
     --white: #fff; 
     --yellow: #F1C631;
+    --metallicYellow: #FFCB15;
     --boxSocialExperience: #ffcdf4;
     --backdrop: #fffaee;
     --arqDesign: #D4CDFF;
     --lojaDasValquirias: #FFD6CD;
     --curaValquirias: #FFF0CD;
+    --limonGree: #A7D55D;
+    --seaSerpente: #58C0DD;
+    --bigFootFeet: #F38A5A;
 }
 
 body {

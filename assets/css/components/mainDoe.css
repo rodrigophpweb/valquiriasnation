@@ -1,0 +1,73 @@
+main {
+
+    h1 {
+        font-weight: 700;
+        font-size: 4.8rem;
+        line-height: 5.7rem;
+        color: var(--eminence);
+        margin: 10rem auto;
+        text-align: center;
+        width: 94rem;
+    }
+
+    .doe {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 30rem;
+
+        button {
+            width: 40rem;
+            height: 40rem;
+            color: var(--white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 4.5rem;
+            line-height: 5.5rem;
+            border: 0;
+            padding: 7rem;
+            
+            &:nth-child(1),
+            &:nth-child(8),
+            &:nth-child(15) {
+                background-color: var(--limonGree);
+            }
+
+            &:nth-child(4),
+            &:nth-child(10),
+            &:nth-child(18) {
+                background-color: var(--eminence);
+            }
+
+            &:nth-child(5),
+            &:nth-child(11),
+            &:nth-child(17) {
+                background-color: var(--paradisePink);
+            }
+
+            &:nth-child(6),
+            &:nth-child(12),
+            &:nth-child(14) {
+                background-color: var(--seaSerpente);
+            }
+
+            &:nth-child(2),
+            &:nth-child(13) {
+                background-color: var(--frenchRose);
+            }
+
+            &:nth-child(3),
+            &:nth-child(16) {
+                background-color: var(--metallicYellow);
+            }
+
+            &:nth-child(7),
+            &:nth-child(9) {
+                background-color: var(--bigFootFeet);
+            }
+            
+        }
+    }
+}
