@@ -27,6 +27,9 @@ main {
             @media screen and (min-width: 1025px) and (max-width: 1366px) {
                 width: 52.5rem;
             }
+            @media screen and (min-width: 320px) and (max-width: 1024px) {
+                width: 100%;
+            }
 
             .item {                
                 .itemNumber {
@@ -46,6 +49,10 @@ main {
             .content {
                 width: 41rem;
                 margin: 0 1.2rem;
+                @media screen and (min-width: 320px) and (max-width: 1024px) {
+                    width: auto;
+                }
+
                 h3 {
                     font-weight: 700;
                     font-size: 2rem;
@@ -72,6 +79,9 @@ main {
                 margin: 5rem 0 0;
                 height: 50rem;
             }
+            @media screen and (min-width: 320px) and (max-width: 1024px) {
+                height: 70rem;
+            }
 
             figure {
                 background-color: var(--frenchRose);
@@ -88,13 +98,23 @@ main {
                 @media screen and (min-width: 1025px) and (max-width: 1366px) {
                     height: auto;
                 }
+                @media screen and (min-width: 320px) and (max-width: 1024px) {
+                    flex-direction: column;
+                    height: 100%;
+                    width: 100%;
+                }
                 
                 
                 img {
                     max-width: 71.3rem;
+                    
                     @media screen and (min-width: 1025px) and (max-width: 1366px) {
                         width: 52%;
                         height: 52%;
+                    }
+                    
+                    @media screen and (min-width: 320px) and (max-width: 1024px) {
+                        max-width: 100%;
                     }
                 }
                 figcaption {    
@@ -105,6 +125,11 @@ main {
                         padding: 5rem;
                     }
 
+                    @media screen and (min-width: 320px) and (max-width: 1024px) {
+                        width: auto;
+                        padding: 3rem;
+                    }
+
                     .subtitle {
                         text-transform: uppercase;
                         font-size: 1.6rem;
@@ -112,6 +137,7 @@ main {
                         margin-bottom: .5rem;
                         color: var(--white);
                     }
+
                     h3 {
                         font-size: 4.8rem;
                         line-height: 5.7rem;
@@ -127,6 +153,12 @@ main {
                             background-color: var(--white);
                             margin-top: 1rem;
                         }
+
+                        @media screen and (min-width: 320px) and (max-width: 1024px) {
+                            width: auto;
+                            font-size: 3.8rem;
+                            line-height: 4.7rem;
+                        }
                     }
                     .content {
                         color: var(--white); 
@@ -136,10 +168,17 @@ main {
                         h4 {
                             font-size: 4rem;
                             font-weight: 500;
+                            @media screen and (min-width: 320px) and (max-width: 1024px) {
+                                font-size: 3rem;
+                            }
                         }
                         p {                        
                             font-size: 2rem;
-                            line-height: 3.2rem;                                                
+                            line-height: 3.2rem; 
+                            @media screen and (min-width: 320px) and (max-width: 1024px) {
+                                font-size: 1.6rem;
+                                line-height: 2.6rem;
+                            }                                               
                         }
                     }
                 }
@@ -181,6 +220,9 @@ main {
             @media screen and (min-width: 1025px) and (max-width: 1366px) {
                 width: 52.5rem;
             }
+            @media screen and (min-width: 320px) and (max-width: 1024px) {
+                width: 100%;
+            }
 
             .item {                
                 .itemNumber {
@@ -199,6 +241,9 @@ main {
             }
             .content {
                 width: 41rem;
+                @media screen and (min-width: 320px) and (max-width: 1024px) {
+                    width: auto;
+                }
                 margin: 0 1.2rem;
                 h3 {
                     font-weight: 700;
@@ -221,13 +266,26 @@ main {
         justify-content: space-around;
         padding: 4.5rem;
         margin-top: 10.5rem;
+        @media screen and (min-width: 1025px) and (max-width: 1366px) {
+            width: 98%;
+        }
+        @media screen and (min-width: 320px) and (max-width: 1024px) {
+            width: 95%;
+            flex-direction: column;
+            padding: 3rem;
+        }
         
         article {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             width: 70rem;
-            
+            @media screen and (min-width: 1025px) and (max-width: 1366px) {
+                width: 50%;
+            }
+            @media screen and (min-width: 320px) and (max-width: 1024px) {
+                width: 100%;
+            }
             header {
                 align-items: start;
                 h2 {
@@ -236,6 +294,10 @@ main {
                     font-size: 4.8rem;
                     line-height: 5.2rem;
                     margin-bottom: 1.7rem;
+                    @media screen and (min-width: 320px) and (max-width: 1024px){
+                        font-size: 3.8rem;
+                        line-height: 5rem;
+                    }
                 }
                 p {
                     font-weight: 400;
@@ -266,6 +328,13 @@ main {
                 width: 65rem;
                 padding: 0;
                 align-items: unset !important;
+                @media screen and (min-width: 1025px) and (max-width: 1366px) {
+                    width: 95%;
+                }
+                @media screen and (min-width: 320px) and (max-width: 1024px) {
+                    width: 100%;
+                }
+
                 p {
                     color: var(--dark) !important;
                     text-transform: none !important;
@@ -281,6 +350,9 @@ main {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
+                    @media screen and (min-width: 320px) and (max-width: 1024px){
+                        flex-direction: column;
+                    }
 
                     a {
                         background-color: var(--eminence);
@@ -290,11 +362,26 @@ main {
                         line-height: 2.1rem;
                         border-radius: .5rem;
                         padding: 1.1rem 3rem ;
+                        @media screen and (min-width: 320px) and (max-width: 1024px) {
+                            width: 30rem;
+                            margin: 1rem auto;
+                            text-align: center;
+                        }
                     }
                 }
             }
+            
         }
-
+        
+        figure {
+            @media screen and (min-width: 320px) and (max-width: 1024px) {
+                display: none;
+            }
+            
+            @media screen and (min-width: 1025px) and (max-width: 1366px) {
+                width: 50%;
+            }                
+        }
     }
 
    .financialStatement {
@@ -316,6 +403,9 @@ main {
             line-height: 2.3rem;
             text-align: center;
             margin:0 auto 5rem;
+            @media screen and (min-width: 320px) and (max-width: 1024px) {
+                width: auto;
+            }
         }
 
         .pdfs {
@@ -323,8 +413,7 @@ main {
             flex-direction: row;
             align-items: center;
             flex-wrap: wrap;
-            justify-content: space-evenly;
-            
+            justify-content: space-evenly;            
             
             
             .pdf {
@@ -338,6 +427,10 @@ main {
                 border-radius: 1rem;
                 border: solid .1rem var(--frenchRose);
                 margin: 0 5rem 5.5rem;
+                @media screen and (min-width: 320px) and (max-width: 1024px) {
+                    padding: 5rem;
+                    display: flex;
+                }
                 .year {
                     color: var(--eminence);
                     text-align: center;
@@ -351,18 +444,24 @@ main {
         width: 100%;        
         margin-bottom: 10rem;
         
-
         article {
             max-width: 145rem;
             display: flex;
             background-color: var(--boxSocialExperience);
             border-radius: 1rem;
-            margin: 0 auto;
+            margin: 0 auto;                
             
             figure {
+                @media screen and (min-width: 1025px) and (max-width: 1366px){
+                    width: 65%;
+                }
                 img {
                     max-width: 86.4rem;
                     height: 100%;
+                    @media screen and (min-width: 1025px) and (max-width: 1366px){
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
 
@@ -373,6 +472,10 @@ main {
                 align-content: center;
                 justify-content: center;
                 margin-left: 14rem;
+                @media screen and (min-width: 1025px) and (max-width: 1366px){
+                    width: 35%;
+                    margin: 0 7rem;
+                }
                 
                 .subtitle {
                     font-weight: 400;
