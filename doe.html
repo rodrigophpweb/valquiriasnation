@@ -51,40 +51,6 @@
             <button class="btnDoe">Arara Social</button>
             <button class="btnDoe">Doação Personalizada</button>
         </section>
-
-        <dialog class="modalSocialExperience paddingContent">
-            <div class="content">
-                <img src="assets/images/svg/linescolorfull.svg" alt=""> 
-                <header>
-                    <figure>
-                        <img src="assets/images/svg/logotipo-nacao-valquirias.svg" alt="Logotipo Nação Valquírias" width="450" class="logotipo">
-                    </figure>
-                    <h2>Experiência Social</h2>                
-                </header>
-                <form action="">
-                    <p>
-                        <label for=""></label>
-                        <input type="text" placeholder="Nome">
-                    </p>
-                    <p>
-                        <label for=""></label>
-                        <input type="text" placeholder="WhatsApp">
-                    </p>
-                    <p>
-                        <select name="" id="">
-                            <option value="">Selecione</option>
-                            <option value="PF">Pessoa Física</option>
-                            <option value="PJ">Pessoa Jurídica</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for=""></label>
-                        <textarea name="" id="" placeholder="Mensagem"></textarea>
-                    </p>
-                    <button type="submit" class="btnSend">Enviar</button>
-                </form>
-            </div>
-        </dialog>
     </main>
 
     <footer class="paddingContent">
@@ -112,29 +78,54 @@
         </address>
     </footer>
     
+    <dialog class="modalSocialExperience paddingContent">
+        <div class="content">
+            <img src="assets/images/svg/linescolorfull.svg" alt=""> 
+            <header>
+                <figure>
+                    <img src="assets/images/svg/logotipo-nacao-valquirias.svg" alt="Logotipo Nação Valquírias" width="450" class="logotipo">
+                </figure>
+                <h2>Experiência Social</h2>                
+            </header>
+            <form action="">
+                <p>
+                    <label for=""></label>
+                    <input type="text" placeholder="Nome">
+                </p>
+                <p>
+                    <label for=""></label>
+                    <input type="text" placeholder="WhatsApp">
+                </p>
+                <p>
+                    <select name="" id="">
+                        <option value="">Selecione</option>
+                        <option value="PF">Pessoa Física</option>
+                        <option value="PJ">Pessoa Jurídica</option>
+                    </select>
+                </p>
+                <p>
+                    <label for=""></label>
+                    <textarea name="" id="" placeholder="Mensagem"></textarea>
+                </p>
+                <button type="submit" class="btnSend">Enviar</button>
+            </form>
+        </div>
+    </dialog>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-    // Seleciona todos os botões com a classe 'btnDoe'
     const buttons = document.querySelectorAll(".btnDoe");
-    
-    // Seleciona o modal
     const modal = document.querySelector(".modalSocialExperience");
-    
-    // Adiciona evento de clique a cada botão
     buttons.forEach(button => {
         button.addEventListener("click", () => {
-            // Exibe o modal
             modal.showModal();
         });
     });
 
-    // Fecha o modal ao clicar fora do conteúdo ou em alguma lógica adicional
     modal.addEventListener("click", (event) => {
-        if (event.target === modal) {
-            modal.close();
-        }
+        event.target === modal && modal.close();
     });
+
 });
 </script>    
 </body>

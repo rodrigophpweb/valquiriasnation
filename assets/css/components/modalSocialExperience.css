@@ -1,15 +1,64 @@
 .modalSocialExperience {
-    header {
-        figure {
-            img {}
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    border: none; /* Remove bordas padrão */        
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semitransparente */
+    color: white; /* Texto branco */
+    position: fixed; /* Garante que o dialog se fixe à viewport */
+    overflow: hidden;
+    padding: 5rem;
+    border-radius: 1rem;
+    left: 10%;
+    top: 2%;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+
+        header {
+            .logotipo {
+                margin-top: 5rem;
+            }
+            h2 {
+                margin: 5rem 0;
+                font-weight: 700;
+                font-size: 7.2rem;
+                line-height: 7rem;
+                color: var(--eminence);
+            }
         }
-    }
-    form {
-        p {
-            label {}
-            input {}
-            textarea {}
-            button {}
+
+        form {
+            width: 75rem;
+
+            input,
+            select,
+            textarea {
+                border: solid .1rem var(--orchid);
+                padding: 2rem;
+                border-radius: .5rem;
+                width: 100%;
+                margin-bottom: 2rem;
+                cursor: pointer;
+
+                &::placeholder {
+                    color: var(--dark);
+                }
+            }
+            textarea {
+                height: 12rem;
+            }
+            
+            .btnSend[type="submit"] {
+                background-color: var(--orchid);
+                padding: 1.5rem 3rem;
+                color: var(--white);
+                font-weight: 600;
+                border-radius: .8rem;
+                border: none;
+            }
         }
     }
 }
