@@ -19,6 +19,10 @@ main {
             padding: 5rem 0 3rem;
             margin: 3rem 0 7rem;
             border-radius: 1rem;
+            @media screen and (min-width: 320px) and (max-width: 1024px) {
+                flex-direction: column;
+                background-size: cover;
+            }
             
 
             .number {
@@ -27,6 +31,9 @@ main {
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                @media screen and (min-width: 320px) and (max-width: 1024px) {
+                    margin: 1.6rem 0;
+                }
 
                 h3 {
                     font-weight: 800;
@@ -51,6 +58,11 @@ main {
             width: 86rem;
             margin: 0 auto 1.5rem;
             color: var(--cetaceanBlue);
+            @media screen and (min-width: 320px) and (max-width: 1024px){
+                width: auto;
+                font-size: 3.8rem;
+                line-height: 4.7rem;
+            }
         }
         .subtitle {
             font-size: 1.6rem;
@@ -61,12 +73,17 @@ main {
             padding-top: 6rem;
             display: flex;
             justify-content: space-evenly;
-            
+            @media screen and (min-width: 320px) and (max-width: 1024px) {
+                flex-direction: column;
+            }
             
             figure {
                 position: relative;
                 border-radius: 12px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                @media screen and (min-width: 320px) and (max-width: 1024px) {
+                    width: auto;
+                }
                 @media screen and (min-width: 1025px) and (max-width: 1366px) {
                     width: 35%;
                 }
@@ -96,6 +113,12 @@ main {
                     display: flex;
                     align-content: flex-start;
                     z-index: 2;
+
+                    @media screen and (min-width: 320px) and (max-width: 1024px) {
+                        bottom: 1.6rem;
+                        left: -2.5rem;
+                    }
+
                     @media screen and (min-width: 1025px) and (max-width: 1366px) {
                         width: 80%;
                         left: -6rem;
@@ -130,7 +153,9 @@ main {
                 flex-direction: column;
                 width: 63.6rem;
                 text-align: left;
-                
+                @media screen and (min-width: 320px) and (max-width: 1024px) {
+                    width: auto;
+                }
 
                 .contentTitle {
                     background: none;
@@ -141,6 +166,13 @@ main {
                         font-size: 4.8rem;
                         line-height: 5.7rem;
                         font-weight: 500;
+                        @media screen and (min-width: 320px) and (max-width: 1024px) {
+                            font-size: 3.8rem;
+                            line-height: 4.7rem;
+                            margin: 2rem 0 0;
+                            text-align: center;
+                            width: 100%;
+                        }
                     }
                 }
     
@@ -226,7 +258,12 @@ main {
                         font-size: 1.6rem;
                         line-height: 2.4rem;
                         color: var(--white);
-                        padding: 2rem  6rem;
+                        padding: 2rem 6rem;
+                        
+                        @media screen and (min-width: 320px) and (max-width: 1024px) {
+                            padding: 1rem 4rem;
+                            margin: 0 auto;
+                        }
                     }
                 }
             }
@@ -242,6 +279,10 @@ main {
             font-weight: 700;
             width: 86rem;
             margin: 0 auto 3rem;
+            @media screen and (min-width: 320px) and (max-width: 1024px) {
+                width: auto;
+                font-size: 3.8rem;
+            }
         }
         .subtitle {
             display: block;
@@ -250,6 +291,9 @@ main {
             font-weight: 400;
             line-height: 2.6rem;
             margin: 0 auto 5rem;
+            @media screen and (min-width: 320px) and (max-width: 1024px) {
+                width: auto;
+            }
         }
         video {}
         img {
@@ -270,6 +314,10 @@ main {
             font-weight: 700;
             margin: 0 auto 3rem;
             text-align: center;
+            @media screen and (min-width: 320px) and (max-width: 1024px) {
+                font-size: 3.8rem;
+                line-height: 4.7rem;
+            }
         }
 
         .years {
