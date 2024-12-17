@@ -25,38 +25,90 @@ header {
         nav {
             display: flex;
             flex-wrap: wrap;
-
+        
+            @media screen and (min-width: 320px) and (max-width: 1024px) {
+                justify-content: space-around;
+            }
+        
             .brand {
                 margin-right: 2.5rem;
                 display: flex;
                 flex-direction: column;
                 align-content: center;
                 justify-content: center;
-                @media screen and (min-width: 320px) and (max-width: 1024px){
+        
+                @media screen and (min-width: 320px) and (max-width: 1024px) {
                     width: 40%;
                 }
-
+        
                 img {
                     margin: 0;
                 }
             }
-
-            .menu {
-                display: flex;
-                align-items: center;
-                @media screen and (min-width: 320px) and (max-width: 1024px){
-                    display: none;
+        
+            .btnMobile {
+                display: none;
+        
+                @media screen and (min-width: 320px) and (max-width: 1024px) {
+                    display: flex;
+                    width: 5rem;
+                    height: 5rem;
+                    font-size: 4rem;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: var(--white);
+                    color: var(--eminence);
+                    border: none;
+                    border-radius: 0.8rem;
+                    cursor: pointer;
                 }
-
+            }
+        
+            .menu {
+                display: flex; /* Flexível por padrão */
+                align-items: center;
+        
+                @media screen and (min-width: 320px) and (max-width: 1024px) {
+                    flex-direction: column; /* Itens empilhados no mobile */
+                    max-height: 0; /* Menu escondido inicialmente */
+                    overflow: hidden; /* Conteúdo escondido */
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    transition: max-height 0.5s ease; /* Transição para abrir o menu */
+                    background-color: var(--eminence); /* Fundo no mobile */
+                    width: 90%; /* Largura no mobile */
+                    border-radius: 0.8rem;
+                }
+        
                 li {
                     margin: 0 3rem;
+        
+                    @media screen and (min-width: 320px) and (max-width: 1024px) {
+                        width: 100%; /* Preenche toda a largura */
+                        padding: 1rem;
+                        border-bottom: solid 0.1rem var(--white);
+        
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+                    }
+        
                     a {
                         font-size: 1.8rem;
                         font-weight: 700;
                         color: var(--white);
                         text-transform: uppercase;
+        
+                        @media screen and (min-width: 320px) and (max-width: 1024px) {
+                            color: var(--yellow);
+                        }
                     }
                 }
+            }
+        
+            .menu.open {
+                max-height: 500px; /* Mostra o menu (ajuste dependendo da altura necessária) */
             }
         }
    }

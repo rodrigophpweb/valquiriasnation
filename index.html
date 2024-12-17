@@ -14,7 +14,8 @@
            <nav>
                 <figure class="brand">
                     <img src="assets/images/svg/logotipo-negativo-nacao-valquirias.svg" alt="Logotipo Nação Valquirias">
-                </figure> 
+                </figure>
+                <button class="btnMobile">≡</button> 
                 <ul class="menu">
                     <li><a href="nossa-nacao.html">Nossa Nação</a></li>
                     <li><a href="comites.html">Comitês</a></li>
@@ -228,8 +229,7 @@
             <span class="subtitle">Sozinhas vamos rápido, mas, juntas vamos longe</span>
             <p>Criamos os nossos conselhos com mulheres empresárias que foram nomeadas como Conselheira de Impacto Social. Nos encontramos mensalmente afim de prestação de contas e construção do futuro da Nação. São elas que estão conosco na Jornada da Transformação Social das nossas meninas e mulheres. Conheça abaixo cada uma delas.</p>
         </section>
-
-        <!--
+        
         <section class="paulistaCouncil paddingContent">
             <h2>CONSELHO NOROESTE PAULISTA</h2>
             <figure id="carousel-1">
@@ -258,7 +258,7 @@
             </figure>
             <div class="navigation" id="navigation-2"></div>
         </section>
-    -->
+    
         <section class="internacionalCouncil paddingContent">
             <h2>CONSELHO INTERNACIONAL</h2>
             <figure>
@@ -293,6 +293,15 @@
     </footer>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            const btnMobile = document.querySelector(".btnMobile");
+            const menu = document.querySelector(".menu");
+
+    btnMobile.addEventListener("click", function () {
+        menu.classList.toggle("open");
+    });
+            
+            
+            
             const tabs = document.querySelectorAll('.tab-item');
             const contentBoxes = document.querySelectorAll('.boxContent > div');
             const contentTitle = document.getElementById('contentDinamic');
