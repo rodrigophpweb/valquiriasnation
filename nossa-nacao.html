@@ -331,6 +331,14 @@
     </dialog>
 
     <script>
+        const btnMobile = document.querySelector(".btnMobile");
+        const menu = document.querySelector(".menu");
+
+        btnMobile.addEventListener("click", function () {
+            menu.classList.toggle("open");
+        });
+            
+        
         let currentBanner = 0; // Index do banner atual
         const banners = document.querySelectorAll('.banner'); 
         const totalBanners = banners.length;

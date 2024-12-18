@@ -115,6 +115,14 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
+    const btnMobile = document.querySelector(".btnMobile");
+    const menu = document.querySelector(".menu");
+
+    btnMobile.addEventListener("click", function () {
+        menu.classList.toggle("open");
+    });
+            
+    
     const buttons = document.querySelectorAll(".btnDoe");
     const modal = document.querySelector(".modalSocialExperience");
     buttons.forEach(button => {
