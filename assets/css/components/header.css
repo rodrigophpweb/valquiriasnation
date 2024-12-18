@@ -79,6 +79,7 @@ header {
                     background-color: var(--eminence); /* Fundo no mobile */
                     width: 90%; /* Largura no mobile */
                     border-radius: 0.8rem;
+                    margin-top: 2rem;
                 }
         
                 li {

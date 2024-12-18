@@ -8,12 +8,14 @@
 </head>
 <body>
     <header>
-        <img src="assets/images/webp/converted/hero-banner-home.webp" alt="">
+        <img src="assets/images/webp/converted/hero-banner-comites.webp" alt="">
         <div class="container">
             <img src="assets/images/svg/linescolorfull.svg" alt="Linhas Coloridas">     
            <nav>
                 <figure class="brand">
-                    <img src="assets/images/svg/logotipo-negativo-nacao-valquirias.svg" alt="Logotipo Nação Valquirias">
+                    <a href="index.html" title="Nação Valquirias">
+                        <img src="assets/images/svg/logotipo-negativo-nacao-valquirias.svg" alt="Logotipo Nação Valquirias">
+                    </a>
                 </figure>
                 <button class="btnMobile">≡</button> 
                 <ul class="menu">
@@ -256,6 +258,13 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
+    const btnMobile = document.querySelector(".btnMobile");
+    const menu = document.querySelector(".menu");
+
+    btnMobile.addEventListener("click", function () {
+        menu.classList.toggle("open");
+    });
+    
     const buttons = document.querySelectorAll(".btnOds");
     const modal = document.querySelector(".modalSocialExperience");
     buttons.forEach(button => {
