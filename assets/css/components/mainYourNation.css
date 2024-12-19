@@ -375,12 +375,18 @@ main {
         
         figure {
             @media screen and (min-width: 320px) and (max-width: 1024px) {
-                display: none;
+                width: 100%;
             }
             
             @media screen and (min-width: 1025px) and (max-width: 1366px) {
                 width: 50%;
-            }                
+            }
+
+            img {
+                @media screen and (min-width: 320px) and (max-width: 1024px) {
+                    width: 100%;
+                }                
+            }
         }
     }
 
@@ -415,6 +421,10 @@ main {
             flex-wrap: wrap;
             justify-content: space-evenly;            
             
+            @media screen and (min-width: 320px) and (max-width: 1024px) {
+                flex-direction: row;
+                width: 100%;
+            }
             
             .pdf {
                 display: flex;
@@ -427,10 +437,16 @@ main {
                 border-radius: 1rem;
                 border: solid .1rem var(--frenchRose);
                 margin: 0 5rem 5.5rem;
+                
                 @media screen and (min-width: 320px) and (max-width: 1024px) {
-                    padding: 5rem;
+                    padding: 2.5rem;
                     display: flex;
+
+                    width: 15rem;
+                    height: 15rem;
+
                 }
+                
                 .year {
                     color: var(--eminence);
                     text-align: center;
